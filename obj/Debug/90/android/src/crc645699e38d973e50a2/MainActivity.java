@@ -2,7 +2,7 @@ package crc645699e38d973e50a2;
 
 
 public class MainActivity
-	extends android.support.v7.app.AppCompatActivity
+	extends androidx.appcompat.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {
@@ -22,6 +22,14 @@ public class MainActivity
 		super ();
 		if (getClass () == MainActivity.class)
 			mono.android.TypeManager.Activate ("path_finder_xamarin.MainActivity, path-finder-xamarin", "", this, new java.lang.Object[] {  });
+	}
+
+
+	public MainActivity (int p0)
+	{
+		super (p0);
+		if (getClass () == MainActivity.class)
+			mono.android.TypeManager.Activate ("path_finder_xamarin.MainActivity, path-finder-xamarin", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 
